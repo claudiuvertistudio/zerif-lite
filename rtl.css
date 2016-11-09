@@ -414,7 +414,6 @@ textarea {
 .navbar {
 	text-align: right;
 }
-
 .navbar-inverse .navbar-nav {
 	margin-right: 0;
 	margin-left: 0;
@@ -432,15 +431,36 @@ textarea {
 .navbar-inverse .main-navigation > ul > li:last-child {
 	margin-left: 0 !important;
 }
-
 .navbar-inverse .navbar-nav ul.sub-menu ul.sub-menu{
-	right:100%;
+	left: auto;
+	right: -9999999em;
 }
-
+.navbar-inverse ul li:hover > ul.sub-menu,
+.navbar-inverse ul li.link-focus > ul.sub-menu {
+	right: 0;
+}
+.navbar-inverse .navbar-nav ul li:hover > ul.sub-menu,
+.navbar-inverse .navbar-nav ul li.link-focus > ul.sub-menu {
+    right: 100%;
+    left: auto;
+}
+.navbar-inverse .navbar-nav ul ul li:hover > ul.sub-menu,
+.navbar-inverse .navbar-nav ul ul li.link-focus > ul.sub-menu {
+    right: 100%;
+    left: auto;
+}
+.navbar-inverse li.menu-item-open-left:hover > ul.sub-menu,
+.navbar-inverse li.menu-item-open-left.link-focus > ul.sub-menu {
+    left: 0;
+}
+.navbar-inverse li.menu-item-open-left li:hover > ul.sub-menu,
+.navbar-inverse ul ul li.link-focus > ul.sub-menu {
+    left: 100%;
+    right: auto;
+}
 .navbar-brand {
 	padding: 7px 15px;
 }
-
 li.current>a:before {
 	right: 12.5%;
 }
