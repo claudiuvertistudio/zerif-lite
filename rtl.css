@@ -462,7 +462,14 @@ textarea {
 	padding: 7px 15px;
 }
 li.menu-item.current>a:before {
-	right: 12.5%;
+    position: absolute;
+    margin: auto;
+    z-index: 1;
+    content: "";
+    width: 75%;
+    height: 2px;
+    bottom: 0px;
+    left: 12.5%;
 }
 ul.nav > li.current_page_item > a:before {
 	right: 12.5%;
