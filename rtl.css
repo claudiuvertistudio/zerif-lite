@@ -461,7 +461,7 @@ textarea {
 .navbar-brand {
 	padding: 7px 15px;
 }
-li.current>a:before {
+li.menu-item.current>a:before {
 	right: 12.5%;
 }
 ul.nav > li.current_page_item > a:before {
