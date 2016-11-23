@@ -6110,6 +6110,12 @@ body.custom-background {
 		top: 0px;
 		right: 0px;
 	}
+
+	.nav .has_children > a:after,
+	.nav .sub-menu .has_children > a:after {
+		content: '';
+		display: none;
+	}
 }
 @media (max-width: 480px) {
 
